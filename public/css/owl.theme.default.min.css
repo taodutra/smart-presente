@@ -1,0 +1,63 @@
+/**
+ * Owl Carousel v2.1.0
+ * Copyright 2013-2016 David Deutsch
+ * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
+ */
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-dots{
+	text-align: center;
+	display: block;
+	margin-top: 14px;
+	position: relative;
+	z-index: 99
+}
+.owl-dots .owl-dot {
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	width: 14px;
+	height: 14px;
+	background: #737373;
+	margin: 0 5px;
+	border-radius: 100px;
+}
+
+.owl-dots .owl-dot.active{
+	background: #000000;
+}
+
+
+.owl-nav {
+	position: absolute;
+	top: 39.5%;
+	width: 100%;
+}
+.owl-nav .owl-next,
+.owl-nav .owl-prev {
+	position: absolute;
+	visibility: hidden;
+}
+.owl-nav .owl-next {right: 0;}
+.owl-nav .owl-prev {left: 0;}
+.owl-nav .owl-next:after{
+	content: "\f061";
+	font-size: 1.5em;
+	font-family: FontAwesome;
+	visibility: visible;
+	position: absolute;
+	right: 10px;
+}
+.owl-nav .owl-prev:after{
+	content: "\f060";
+	font-size: 1.5em;
+	font-family: FontAwesome;
+	visibility: visible;
+	position: absolute;
+	left: 10px;
+
+}

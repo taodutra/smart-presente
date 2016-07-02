@@ -1,0 +1,146 @@
+@import "vars";
+
+
+// all devices
+
+// body
+html {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    // background: $light;
+    background:#fff url('../img/mobile-background.jpg') 50% 0 no-repeat;
+
+    background-size: cover;
+
+    font-family: 'Times', 'Times Regular', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 62.5%;
+    // overflow-x: hidden;
+
+    height: 100%;
+
+    // text-align: center;
+}
+
+
+.container{
+    position: relative;
+    z-index: 2;
+    max-width: 1135px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar{
+    padding: 20px 0;
+}
+.site-title{
+    height: 26px;
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+    a{
+        display: block;
+        text-indent: -3000px;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+
+        background:transparent url('../img/logo.png') 0 0 no-repeat;
+        background-size: contain;
+
+    }
+}
+
+
+.intro{
+    min-height: 100%;
+    padding-bottom: 90px;
+    position: relative;
+
+    h2{
+        font-size: 2.5em;
+        font-family: 'Impact', 'Impact Regular', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font-size: 1.6em;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+    p{
+        font-size: 1.3em;
+    }
+
+    .text{
+        margin-bottom: 40px;
+    }
+    .fb{
+        background: rgba(255,255,255,0.3);
+        padding: 20px;
+        text-align: center;
+
+        .title{
+            font-size: 2.7em;
+            margin-bottom: 10px;
+        }
+    }
+
+    &:after{
+        display: block;
+        content: '';
+        z-index: 1;
+
+        background:transparent url('../img/ilustracao.png') 100% 100% no-repeat;
+        background-size: contain;
+
+        width: 827px;
+        height: 226px;
+
+        max-width: 100%;
+
+        position: absolute;
+
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+
+@media screen and (min-width: 100px) {
+
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+
+    body{
+        background-attachment: fixed;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .desk-only {
+        display: none;
+    }
+
+}
+
+// desktop
+@media screen and (min-width: 850px) {
+    @import "desktop";
+}
+
+@import "app-rafael";
